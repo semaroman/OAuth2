@@ -39,7 +39,7 @@ public class Application {
         return "write or delete";
     }
 
-    @PreAuthorize("hasAnyRole('READ','WRITE','DELETE')")
+    @PreAuthorize("hasAnyRole('READ', 'WRITE', 'DELETE')")
     @GetMapping("hello")
     @ResponseBody
     public String hello(@RequestParam("username") String username) throws Exception {
